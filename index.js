@@ -4,8 +4,6 @@ const port = 8080;
 
 
 
-
-
 app.listen(port,function(error){
    if(error){
     console.log(`Error occured at ${error}`);

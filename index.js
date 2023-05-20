@@ -5,6 +5,10 @@ const port = 8080;
 const route = require('./routes');
 app.use('/',route);
 
+app.set('view engine', 'ejs');
+app.set('views', './views');
+
+
 
 
 app.listen(port,function(error){

@@ -7,6 +7,14 @@ const add=function(req,res){
     });
 }
 
+const signUpPage=function(req,res){
+    console.log("Inside SignUp controller");
+    return res.render('signup',{
+        title: "SignUp"
+    });
+}
+
 module.exports = {
-    add
+    add,
+    signUpPage
 };
